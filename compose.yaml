@@ -1,0 +1,23 @@
+﻿services:
+  emstcpserver:
+    image: emstcpserver
+    build:
+      context: .
+      dockerfile: EmsTcpServer/Dockerfile
+    ports:
+      - "5000:5000"
+
+  emstcpclient:
+    image: emstcpclient
+    build:
+      context: .
+      dockerfile: EmsTcpClient/Dockerfile
+    depends_on:
+      - emstcpserver
+    environment:
+      Client__Host: emstcpserver
+      Client__Port: 5000
+      Logging__LogLevel__Default: "Debug"
+    deploy:
+      mode: replicated
+      replicas: 2

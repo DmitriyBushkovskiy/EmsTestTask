@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmsTcpServer", "EmsTcpServer\EmsTcpServer.csproj", "{11EA3259-EE62-4DED-9996-5B3BAFFCFFEC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F13BCCDC-4C36-4DA4-AF0C-872B3C1DC8C2}"
+	ProjectSection(SolutionItems) = preProject
+		compose.yaml = compose.yaml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmsTcpClient", "EmsTcpClient\EmsTcpClient.csproj", "{CF5BB2FD-A320-425F-ACA9-AE0CB4B8A58B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{783D8353-B113-4733-9790-8C688A0F90D0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{DF138F4D-2EBA-4D7E-AB2E-A066EEF91821}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmsTcpServer.Tests", "Tests\EmsTcpServer.Tests\EmsTcpServer.Tests.csproj", "{CFC2AD26-FA0D-44A6-A1AD-498C9016626D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmsTcpClient.Tests", "Tests\EmsTcpClient.Tests\EmsTcpClient.Tests.csproj", "{143DB42B-1A6B-4DD5-9F7B-8FF9A63C9CAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Tests\Common\Common.csproj", "{30170998-BE5E-4A3C-8EC0-F922285A0013}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{11EA3259-EE62-4DED-9996-5B3BAFFCFFEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11EA3259-EE62-4DED-9996-5B3BAFFCFFEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11EA3259-EE62-4DED-9996-5B3BAFFCFFEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11EA3259-EE62-4DED-9996-5B3BAFFCFFEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF5BB2FD-A320-425F-ACA9-AE0CB4B8A58B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF5BB2FD-A320-425F-ACA9-AE0CB4B8A58B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF5BB2FD-A320-425F-ACA9-AE0CB4B8A58B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF5BB2FD-A320-425F-ACA9-AE0CB4B8A58B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{783D8353-B113-4733-9790-8C688A0F90D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{783D8353-B113-4733-9790-8C688A0F90D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{783D8353-B113-4733-9790-8C688A0F90D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{783D8353-B113-4733-9790-8C688A0F90D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFC2AD26-FA0D-44A6-A1AD-498C9016626D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFC2AD26-FA0D-44A6-A1AD-498C9016626D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFC2AD26-FA0D-44A6-A1AD-498C9016626D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFC2AD26-FA0D-44A6-A1AD-498C9016626D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{143DB42B-1A6B-4DD5-9F7B-8FF9A63C9CAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{143DB42B-1A6B-4DD5-9F7B-8FF9A63C9CAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{143DB42B-1A6B-4DD5-9F7B-8FF9A63C9CAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{143DB42B-1A6B-4DD5-9F7B-8FF9A63C9CAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30170998-BE5E-4A3C-8EC0-F922285A0013}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30170998-BE5E-4A3C-8EC0-F922285A0013}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30170998-BE5E-4A3C-8EC0-F922285A0013}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30170998-BE5E-4A3C-8EC0-F922285A0013}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CFC2AD26-FA0D-44A6-A1AD-498C9016626D} = {DF138F4D-2EBA-4D7E-AB2E-A066EEF91821}
+		{143DB42B-1A6B-4DD5-9F7B-8FF9A63C9CAE} = {DF138F4D-2EBA-4D7E-AB2E-A066EEF91821}
+		{30170998-BE5E-4A3C-8EC0-F922285A0013} = {DF138F4D-2EBA-4D7E-AB2E-A066EEF91821}
+	EndGlobalSection
+EndGlobal
